@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu du Pendu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/Pendu7.png">
+</head>
+
+<body>
+    <h1>Jeu du Pendu</h1>
+    <p>Tentez de deviner le mot secret en entrant des lettres une par une au clavier.<br>Ne gaspillez pas vos coups, car si trop de vos choix sont erronés vous tuerez le pendu et vous perdrez la partie.</>
+    <div class="container">
+        <div id="pendu">
+        <p id="motCache">_ _ _ _ _</p>
+        <p id="message"></p>
+        <div id="lettresTentees"></div>
+        </div>
+        <input type="text" id="inputLettre" maxlength="1" placeholder="Entrez une lettre !">
+        <input type="text" id="inputProposition" maxlength="maxlength" placeholder="Faites une proposition !">
+        <button id="boutonVerifier">Vérifier</button>
+        <button id="boutonChangerDeMot">Changer de mot</button>
+    </div>
+    <div id="imagePendu">
+        <img src="images/Pendu7.png" width="300px" height="300px" alt="Illustration du pendu" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

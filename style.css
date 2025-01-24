@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+
+body {
+    font-family: "roboto400", sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+#motCache {
+    font-size: 2rem;
+    letter-spacing: 10px;
+    margin: 20px 0;
+}
+
+#message {
+    color: red;
+    font-weight: bold;
+}
+
+#inputLettre, #inputProposition {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%; /*Adaptation pour écrans plus petits */
+    max-width: 300px;
+}
+
+#boutonVerifier, #boutonChangerDeMot {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80%;    /*Largeur ajustée pour petits écrans  */
+    max-width: 300px;
+}
+
+#boutonVerifier:hover, #boutonChangerDeMot:hover {
+    background-color: #0056b3;
+}
+
+#imagePendu img {
+    display: block;
+    margin: 20px auto;
+    width: 100%; /* L'image prendra toute la largeur */
+    max-width: 300px; /* Mais pas plus que 300px */
+    height: auto; /* Maintient le ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+/* Media queries pour écrans plus petits */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #motCache {
+        font-size: 1.5rem;
+        letter-spacing: 8px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    #boutonVerifier, #boutonChangerDeMot {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    #inputLettre, #inputProposition {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #motCache {
+        font-size: 1.2rem;
+        letter-spacing: 5px;
+    }
+
+    #inputLettre, #inputProposition {
+        width: 80%;
+    }
+
+    #boutonVerifier, #boutonChangerDeMot {
+        width: 90%;
+    }
+}
